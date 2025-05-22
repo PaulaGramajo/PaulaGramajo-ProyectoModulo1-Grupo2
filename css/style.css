@@ -1,0 +1,12 @@
+:root { 
+ --azul-oscuro-1: #05183c; 
+ --azul-oscuro-2: #06296b; 
+ --azul-medio:    #1a3c7d; 
+ --azul-brillante: #0d56df;
+
+--azul-grafito: #335C7D; 
+ --azul-claro:    #417cea; 
+}
+.colorFooter{
+    background-color: var(--azul-oscuro-1);
+}
