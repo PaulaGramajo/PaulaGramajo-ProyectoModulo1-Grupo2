@@ -34,6 +34,11 @@
   cursor: pointer;
   transition: transform 0.3s;
 }
+.footerFont{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+}
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
