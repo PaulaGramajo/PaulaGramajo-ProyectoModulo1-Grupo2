@@ -1,12 +1,41 @@
-:root { 
- --azul-oscuro-1: #05183c; 
- --azul-oscuro-2: #06296b; 
- --azul-medio:    #1a3c7d; 
- --azul-brillante: #0d56df;
+:root {
+  --azul-oscuro-1: #05183c;
+  --azul-oscuro-2: #06296b;
+  --azul-medio: #1a3c7d;
+  --azul-brillante: #0d56df;
 
---azul-grafito: #335C7D; 
- --azul-claro:    #417cea; 
+  --azul-grafito: #335c7d;
+  --azul-claro: #417cea;
 }
-.colorFooter{
-    background-color: var(--azul-oscuro-1);
+.colorFooter {
+  background-color: var(--azul-oscuro-1);
+}
+.text-style {
+  display: block;
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+  margin-bottom: 3px;
+  transition: transform 0.2s ;
+}
+.text-style:hover {
+  transform: scale(1.1);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ;
+}
+.icons {
+  display: inline-block;
+  color: rgb(190, 190, 190);
+  transition: transform 0.3s;
+}
+.icons:hover {
+  transform: scale(1.1);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+@media (width < 576px) {
+  .centrarTexto {
+    text-align: center;
+  }
 }
