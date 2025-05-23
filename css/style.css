@@ -39,6 +39,16 @@
     text-align: center;
     font-size: 13px;
 }
+
+.carousel-video {
+    height: 500px; 
+    object-fit: cover;
+  }
+  .carousel-img {
+    height: 500px;
+    object-fit: cover;
+  }
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
