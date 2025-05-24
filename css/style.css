@@ -52,6 +52,24 @@
   aspect-ratio: 4/2;
   object-fit: cover;
 }
+
+.subtituloCategoria{
+  color: var(--azul-brillante);
+}
+
+.bg-cardCat{
+  background-color: #c6d3e7;
+}
+
+.btn-cat{
+  background-color: var(--azul-claro);
+  
+}
+
+.btn-cat:hover{
+  background-color: var(--azul-grafito);
+}
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
