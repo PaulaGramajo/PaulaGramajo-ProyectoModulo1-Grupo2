@@ -6,10 +6,14 @@
 
   --azul-grafito: #335c7d;
   --azul-claro: #417cea;
+  --gris: grey;
+  --gris-claro: #c9c9c9;
+  --gris-clarito: #ffffff;
 }
 .colorFooter {
   background-color: var(--azul-oscuro-1);
 }
+
 .text-style {
   display: block;
   color: rgb(190, 190, 190);
@@ -17,23 +21,27 @@
   margin-bottom: 3px;
   transition: transform 0.2s ;
 }
+
 .text-style:hover {
   transform: scale(1.1);
   color: white;
   cursor: pointer;
   transition: transform 0.2s ;
 }
+
 .icons {
   display: inline-block;
   color: rgb(190, 190, 190);
   transition: transform 0.3s;
 }
+
 .icons:hover {
   transform: scale(1.1);
   color: white;
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 .footerFont{
     display: block;
     text-align: center;
@@ -52,6 +60,26 @@
   aspect-ratio: 4/2;
   object-fit: cover;
 }
+
+
+.colorBtn{
+  display: inline-block;
+  transition: transform 0.3s;
+  background-color: var(--azul-oscuro-2);
+}
+
+.colorBtn:hover{
+  transform: scale(1.04);
+  transition: transform 0.3s;
+  background-color: var(--azul-claro);
+}
+
+.inputContact{
+  border-color: var(--gris-claro);
+  background-color: var(--gris-clarito);
+
+}
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
