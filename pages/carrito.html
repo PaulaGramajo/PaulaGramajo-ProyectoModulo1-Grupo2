@@ -17,7 +17,7 @@
   <body>
     <header></header>
     <main class="bg-light">
-      <section class="container py-5">
+      <section class="container pt-5 pb-2">
         <h1 class="text-center text-dark pb-3">Mi carrito</h1>
         <div class="card shadow bg-fondo p-2">
           <div class="row row-gap-2">
@@ -32,7 +32,7 @@
                     alt="Zapatillas de Trail Running Terrex Agravic 3"
                   />
                 </div>
-                <div class="col-9">
+                <div class="col-12">
                   <div class="card-body">
                     <div
                       class="d-flex justify-content-between align-items-start mb-2"
@@ -43,15 +43,17 @@
                         </h6>
                         <p class="card-text small">Size: 38 (UK 8)</p>
                         <div class="d-flex align-items-center">
-                          <select class="form-select form-select-sm w-25 me-2 bg-light text-dark">
+                          <select
+                            class="form-select form-select w-50 me-2 bg-light text-dark"
+                          >
                             <option value="1" selected>1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                           </select>
                         </div>
                       </div>
-                      <div class="text-end">
-                        <p class="card-text">$ 179.999,00</p>
+                      <div class="text-end d-flex justify-content-center">
+                        <p class="card-text fs-5">$179.999,00</p>
                         <button
                           type="button"
                           class="btn btn-outline-secondary ms-2 colorBtn"
@@ -74,7 +76,7 @@
                     alt="Zapatillas de Trail Running Terrex Agravic 3"
                   />
                 </div>
-                <div class="col-9">
+                <div class="col-12">
                   <div class="card-body">
                     <div
                       class="d-flex justify-content-between align-items-start mb-2"
@@ -85,15 +87,17 @@
                         </h6>
                         <p class="card-text small">Size: 38 (UK 8)</p>
                         <div class="d-flex align-items-center">
-                          <select class="form-select form-select-sm w-25 me-2 bg-light text-dark">
+                          <select
+                            class="form-select form-select-sm w-50 me-2 bg-light text-dark"
+                          >
                             <option value="1" selected>1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                           </select>
                         </div>
                       </div>
-                      <div class="text-end">
-                        <p class="card-text">$ 179.999,00</p>
+                      <div class="text-end d-flex justify-content-center">
+                        <p class="card-text fs-5">$179.999,00</p>
                         <button
                           type="button"
                           class="btn btn-outline-secondary ms-2 colorBtn"
@@ -107,7 +111,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 ">
+            <div class="col-12 col-lg-4">
               <div class="card bg-carrito text-dark sticky-lg-top">
                 <div class="card-body">
                   <h5 class="card-title">Resumen del pedido</h5>
@@ -125,7 +129,9 @@
                     <span>Total</span>
                     <span>$ 188.998,00</span>
                   </div>
-                  <p class="text-muted small text-secondary-emphasis">(IVA incluido $ 32.801,31)</p>
+                  <p class="text-muted small text-secondary-emphasis">
+                    (IVA incluido $ 32.801,31)
+                  </p>
                   <hr />
                   <div class="d-grid mb-3">
                     <button
@@ -136,9 +142,11 @@
                     </button>
                   </div>
                   <div class="d-grid">
-                    <a href="./error404.html"><button class="btn btn-lg colorBtn" type="button">
-                      Ir a pagar <i class="bi bi-arrow-right ms-2"></i>
-                    </button></a>
+                    <a href="./error404.html"
+                      ><button class="btn btn-lg colorBtn" type="button">
+                        Ir a pagar
+                        <i class="bi bi-arrow-right ms-2"></i></button
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -146,6 +154,11 @@
           </div>
         </div>
       </section>
+      <div class="py-3 container">
+        <a href="../index.html" class="fs-4 link-primary"
+          ><i class="bi bi-arrow-left"></i> Continuar comprando
+        </a>
+      </div>
     </main>
 
     <footer class="colorFooter pt-4 pb-1 centrarTexto">
