@@ -91,6 +91,10 @@
   background-color: var(--gris-claro);
 }
 
+.bg-fondo{
+  background-color: rgba(204, 204, 204, 0.411);
+}
+
 .btn-cat{
   background-color: var(--azul-claro);
   
