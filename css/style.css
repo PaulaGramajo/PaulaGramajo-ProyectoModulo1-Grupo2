@@ -77,6 +77,7 @@
 .inputContact{
   border-color: var(--gris-claro);
   background-color: var(--gris-clarito);
+  }
 
 .subtituloCategoria{
   color: var(--azul-brillante);
@@ -84,6 +85,10 @@
 
 .bg-cardCat{
   background-color: #c6d3e7;
+}
+
+.bg-carrito{
+  background-color: var(--gris-claro);
 }
 
 .btn-cat{
