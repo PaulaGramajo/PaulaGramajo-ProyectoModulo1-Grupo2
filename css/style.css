@@ -109,3 +109,28 @@
     text-align: center;
   }
 }
+
+/* pequeño */
+  @media(width<=667px){
+    .form-unidad{
+      width: 60px;
+    }
+    
+  }
+
+/* mediano */
+  @media(668px<=width<=991px){
+    .form-unidad{
+      width: 20%;
+    }
+    
+  }
+
+/* large */
+@media (width >= 992px) {
+    .form-unidad{
+      width: 20%;
+    }
+  }
+
+  
