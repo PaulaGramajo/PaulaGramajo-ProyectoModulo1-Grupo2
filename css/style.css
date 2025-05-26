@@ -55,6 +55,23 @@
 
 }
 
+.promo-banner {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .promo-banner .baner {
+    color: #00c000;
+    font-weight: bold;
+  }
+
+  .promo-banner i {
+    margin-right: 5px;
+  }
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
