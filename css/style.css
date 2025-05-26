@@ -121,7 +121,7 @@
 /* mediano */
   @media(668px<=width<=991px){
     .form-unidad{
-      width: 20%;
+      width: 70px;
     }
     
   }
@@ -129,7 +129,7 @@
 /* large */
 @media (width >= 992px) {
     .form-unidad{
-      width: 20%;
+      width: 70px;
     }
   }
 
