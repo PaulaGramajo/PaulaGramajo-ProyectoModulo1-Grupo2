@@ -136,7 +136,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 
 .videoCategoria{
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -144,6 +144,11 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   width: 100%;
   aspect-ratio: 4/2;
   object-fit: cover;
+}
+
+.bg-multimedia{
+  background-color: var(--azul-grafito);
+  box-shadow: 10px 5px 15px gray;
 }
 
 .colorBtn{
