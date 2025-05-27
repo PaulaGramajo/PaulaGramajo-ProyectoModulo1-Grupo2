@@ -10,6 +10,91 @@
   --gris-claro: #c9c9c9;
   --gris-clarito: #ffffff;
 }
+
+/* Sección superior */
+#navBarSuperior{
+background-color: var(--azul-oscuro-1);
+
+}
+
+#navBarPrincipal{
+  background-color: var(--azul-oscuro-1);
+}
+
+.logoIndexPrincipal{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}        
+  .brillo {
+            transition: filter 0.5s; /* Transición para suavizar el efecto */
+     }
+
+.brillo:hover {
+filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
+}
+
+
+/*UnorderList Navbar*/
+ .nav-link {
+            display: inline-block; 
+            position: relative;
+            color: rgb(246, 241, 241); 
+            text-decoration: none; 
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background-color: rgb(199, 199, 208); 
+            transform: scaleX(0); 
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            transform: scaleX(1); 
+        }
+
+/* input,boton input y dos svg */
+.contenedorPerfilYCart{
+  background-color: var(--azul-oscuro-1);
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 40px;
+ 
+}
+
+.botonSearch{
+ border-radius: 30px;
+ background-color: rgb(159, 157, 157);
+ border: 2px solid white;
+ padding: 3px;
+}
+.botonSearch:hover{
+  background: grey;
+}
+
+#searchInput{
+  border-radius: 20px;
+  width:130px;
+  padding: 2px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.301);
+}
+
+
+/*Acerca de nosotros Sección*/
+.fotoAcercaDeNosotros{
+  height: 400px;
+  width: 250px;
+  }
+
+/* Footer seccion*/
 .colorFooter {
   background-color: var(--azul-oscuro-1);
 }
@@ -61,7 +146,6 @@
   object-fit: cover;
 }
 
-
 .colorBtn{
   display: inline-block;
   transition: transform 0.3s;
@@ -104,10 +188,19 @@
   background-color: var(--azul-grafito);
 }
 
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
   }
+}
+
+@media (width < 992px) {
+  .Mhamburguesa{
+    margin-top: 30px ;
+    
+  }
+  
 }
 
 /* pequeño */
