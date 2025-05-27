@@ -47,7 +47,8 @@
   .carousel-img {
   width: 100%;          
   max-width: 2000px;    
-  height: 500px;          
+  height: 500px; 
+  object-fit: cover;         
  
   }
   .carousel-control-prev-icon, .carousel-control-next-icon{
@@ -70,6 +71,9 @@
 
   .promo-banner i {
     margin-right: 5px;
+  }
+  .icono-pago{
+    height: 24px;
   }
 
 @media (width < 576px) {
