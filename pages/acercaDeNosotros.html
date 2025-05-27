@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="/img/logoNextGen.bmp" type="image/png" />
+    <title>NextGen</title>
+</head>
+
+<body>
+    <header id="navBarSuperior">
+
+        <nav class="navbar navbar-expand-lg p-1 " id="inicioPag">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logoIndexPrincipal brillo"
+                        src="../img/logoNextGen.png" alt="logo"></a>
+                <div class="d-flex justify-content-center justify-content-lg-end w-100 mx-5">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                   
+            </div>
+        </nav>
+
+        <nav class="d-flex justify-content-lg-center mx-2 " id="navBarPrincipal">
+            <div class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-8 d-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hombre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mujer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Niño</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Accesorios</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex align-items-center ms-auto order-3 me-1">
+                            <form class="d-flex me-3" role="search">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                                <div class="collapse" id="searchForm">
+                                    <input class=" form-control ms-2" type="search"
+                                        placeholder="¿Que estas buscando?..." aria-label="Search" id="searchInput" />
+                                </div>
+                            </form>
+                            <a href="#" class="link-light mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" fill="currentColor"
+                                    class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>
+                            </a>
+                            <a href="#" class="link-light mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" fill="currentColor"
+                                    class="bi bi-cart4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM">
+
+                                    </path>
+
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión / Registrarse</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Recordarme</label>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">Iniciar Sesión</button>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid text-center mt-2 mt-lg-5">
+            <h2>Acerca de nosotros</h2>
+            <p>
+                ¡Bienvenido a nuestra Ecommerce NextGen! Somos un grupo de apasionados por el
+                mundo Fitness, como parte de diversas actividades deportivas, conocemos los gustos
+                y lo necesario para hacer el momento de entrenamiento más óptimo con nuestra indumentaria!
+                ¡Esperamos que te gusten y lo disfrutes!
+            </p>
+        </div>
+        <div class="container-fluid  mt-3">
+            <h2 class="text-center">¡Nuestro Equipo!</h2>
+            <div class="d-flex justify-content-around row">
+                <div class="col-12 col-md-4 col-lg-4 ">
+                    <div class="card border mt-2 border-secondary">
+                        <img src="../img/fotoperfilgerman.jpg" class="card-img-top fotoAcercaDeNosotros mx-5 p-4 w-75"  alt="Pablo German Jimenez Dev " />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pablo German Jimenez</h5>
+                            <p><strong>Full Stack Developer</strong></p>
+                            <a href="https://github.com/linkincito" class="btn btn-dark mt-3">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border border-secondary mt-2">
+                        <img src="../img/fotoperfilpaulagramajo.jpg" class="card-img-top fotoAcercaDeNosotros mx-5 p-4 w-75" alt="Paula Gramajo Dev" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Paula Gramajo</h5>
+                            <p><strong>Full Stack Developer</strong></p>
+                            <a href="https://github.com/PaulaGramajo" class="btn btn-dark mt-3">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border border-secondary mt-2">
+                        <img src="" class="card-img-top" alt="Naim Paz Dev" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Naim Paz</h5>
+                            <p><strong>Full Stack Developer</strong></p>
+                            <a href="#" class="btn btn-dark mt-3">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border border-secondary mt-2">
+                        <img src="" class="card-img-top" alt="Hector Eduardo Velasquez Dev" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hector Eduardo Velasquez</h5>
+                            <p><strong>Backend Developer</strong></p>
+                            <a href="#" class="btn btn-dark mt-3">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border border-secondary mt-2">
+                        <img src="" class="card-img-top" alt="Gonzalo Diaz Dev" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gonzalo Diaz</h5>
+                            <p><strong>Backend Developer</strong></p>
+                            <a href="https://github.com/Gonzalo-diazz" class="btn btn-dark mt-3">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card border border-secondary mt-2">
+                        <img src="" class="card-img-top" alt="Ignacio Abellesen" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ignacio Abellesen</h5>
+                            <p><strong>Backend Developer</strong></p>
+                            <a href="https://github.com/nachoabe30" class="btn btn-dark mt-3">
+                                GitHub
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="colorFooter pt-4 pb-1 centrarTexto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./index.html" class="link-light link-underline link-underline-opacity-0">
+                        <h4 class="fs-3 text-style mb-4">NEXTGEN</h4>
+                    </a>
+                    <h4 class="fs-6">SUMATE A LA COMUNIDAD</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4>Nosotros</h4>
+                    <ul class="list-unstyled">
+                        <a href="#" class="text-style">
+                            <li>Acerca de nosotros</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Contacto</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Medios de pago</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Trabaja con nosotros</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Sucursales</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4>Ayuda</h4>
+                    <ul class="list-unstyled">
+                        <a href="#" class="text-style">
+                            <li>Avisos legales</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Terminos y condiciones</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Politicas</li>
+                        </a>
+                        <a href="#" class="text-style">
+                            <li>Sugerencias y reclamos</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-2">
+                    <h4>Seguinos</h4>
+                    <a href="#" class="icons fs-4 me-2">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="icons fs-4 me-2">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="icons fs-4 me-2">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#" class="icons fs-4 me-2">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <div class="my-3 fs-4">
+                        <a href="#inicioPag" class="text-light ">
+                            <i class="bi bi-arrow-up-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-between border-top">
+                    <h4 class="footerFont mt-2">
+                        <i class="bi bi-geo-alt-fill footerFont"></i>Argentina
+                    </h4>
+                    <p class="text-secondary mt-3 mb-0 footerFont">
+                        NextGen|&copy;Todos los derechos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
