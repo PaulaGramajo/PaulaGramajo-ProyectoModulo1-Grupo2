@@ -299,5 +299,32 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
       width: 70px;
     }
   }
+  .text-azul {
+    color: var(--azul-oscuro-1);
+  }
+  
+  .btn-azul {
+    background-color: var(--azul-oscuro-1);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-azul:hover {
+    background-color: #02122a;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: var(--azul-oscuro-1);
+    box-shadow: 0 0 0 0.2rem rgba(5, 24, 60, 0.25);
+  }
+  
+  img.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+
 
  
