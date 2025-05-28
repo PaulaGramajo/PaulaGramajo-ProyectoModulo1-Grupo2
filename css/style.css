@@ -133,6 +133,61 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
     font-size: 13px;
 }
 
+.carousel-video {
+    height: 500px; 
+    object-fit: cover;
+  }
+  .carousel-img {
+  width: 100%;          
+  max-width: 2000px;    
+  height: 500px; 
+  object-fit: cover;         
+ 
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(1);
+
+}
+
+.promo-banner {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .promo-banner .baner {
+    color: #00c000;
+    font-weight: bold;
+  }
+
+  .promo-banner i {
+    margin-right: 5px;
+  }
+  .icono-pago{
+    height: 24px;
+  }
+
+ .titulo-subrayado {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.titulo-subrayado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+
+.titulo-subrayado:hover::after {
+  width: 100%;
 
 .videoCategoria{
     width: 100%;
@@ -191,6 +246,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 
 .btn-cat:hover{
   background-color: var(--azul-grafito);
+
 }
 
 .espacio-talla{
@@ -249,6 +305,19 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   }
 }
 
+@media (max-width: 576px) {
+  .carousel-img {
+    max-width: 500px;
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-video {
+    max-width: 500px;
+    height: 200px;
+  }
+}
+
 @media (width < 992px) {
   .Mhamburguesa{
     margin-top: 30px ;
@@ -280,6 +349,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
     }
   }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   img {
     display: none; 
@@ -287,3 +357,6 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 }
 
   
+=======
+ 
+>>>>>>> 6e1c3dd9fbc196ebb4cd04e67cc2075cc5d4664b
