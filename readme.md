@@ -10,7 +10,7 @@ Inspirada en referentes del sector como **Nike**, **Adidas** y **Sporting**, cre
 ## 🌐 Sitio en línea
 
 🚀 Podés ver nuestra tienda en vivo en el siguiente enlace:  
-🔗 **[Enlace a Nextgen en Netlify](https://TU-LINK-NETLIFY-AQUI.netlify.app)** ← *¡Reemplazá este texto con tu URL cuando esté listo!*
+🔗 **[Enlace a Nextgen en Netlify](https://nextgen-grupo2.netlify.app/)
 
 ---
 
