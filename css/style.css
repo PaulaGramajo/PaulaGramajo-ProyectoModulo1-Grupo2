@@ -194,6 +194,9 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 }
 
 
+
+
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
