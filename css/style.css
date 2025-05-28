@@ -6,6 +6,9 @@
 
   --azul-grafito: #335c7d;
   --azul-claro: #417cea;
+  --gris: grey;
+  --gris-claro: #c9c9c9;
+  --gris-clarito: #ffffff;
 }
 .acercaDeNosotrosMain{
   background-color: black;
@@ -87,8 +90,9 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 
 #searchInput{
   border-radius: 20px;
+
   width:30 px;
-  padding: 5px;
+  padding: 5px; 
   background: rgba(255, 255, 255, 0.301);
 }
 
@@ -113,6 +117,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 .colorFooter {
   background-color: var(--azul-oscuro-1);
 }
+
 .text-style {
   display: block;
   color: rgb(190, 190, 190);
@@ -120,6 +125,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   margin-bottom: 3px;
   transition: transform 0.2s ;
 }
+
 .text-style:hover {
   transform: scale(1.1);
   color: white;
@@ -132,20 +138,212 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   color: rgb(190, 190, 190);
   transition: transform 0.3s;
 }
+
 .icons:hover {
   transform: scale(1.1);
   color: white;
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 .footerFont{
     display: block;
     text-align: center;
     font-size: 13px;
 }
+
+.carousel-video {
+    height: 500px; 
+    object-fit: cover;
+  }
+  .carousel-img {
+  width: 100%;          
+  max-width: 2000px;    
+  height: 500px; 
+  object-fit: cover;         
+ 
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(1);
+
+}
+
+.promo-banner {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .promo-banner .baner {
+    color: #00c000;
+    font-weight: bold;
+  }
+
+  .promo-banner i {
+    margin-right: 5px;
+  }
+  .icono-pago{
+    height: 24px;
+  }
+
+ .titulo-subrayado {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.titulo-subrayado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+
+.titulo-subrayado:hover::after {
+  width: 100%;
+
+.videoCategoria{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.imgCategoria{
+  width: 100%;
+  aspect-ratio: 4/2;
+  object-fit: cover;
+}
+
+.bg-multimedia{
+  background-color: var(--azul-grafito);
+  box-shadow: 10px 5px 15px gray;
+}
+
+.colorBtn{
+  display: inline-block;
+  transition: transform 0.3s;
+  background-color: var(--azul-oscuro-2);
+}
+
+.colorBtn:hover{
+  transform: scale(1.04);
+  transition: transform 0.3s;
+  background-color: var(--azul-claro);
+}
+
+.inputContact{
+  border-color: var(--gris-claro);
+  background-color: var(--gris-clarito);
+  }
+
+.subtituloCategoria{
+  color: var(--azul-brillante);
+}
+
+.bg-cardCat{
+  background-color: #c6d3e7;
+}
+
+.bg-carrito{
+  background-color: var(--gris-claro);
+}
+
+.bg-fondo{
+  background-color: rgba(204, 204, 204, 0.411);
+}
+
+.btn-cat{
+  background-color: var(--azul-claro);
+  
+}
+
+.btn-cat:hover{
+  background-color: var(--azul-grafito);
+
+}
+
+
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
   }
 }
 
+@media (max-width: 576px) {
+  .carousel-img {
+    max-width: 500px;
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-video {
+    max-width: 500px;
+    height: 200px;
+  }
+}
+
+@media (width < 992px) {
+  .Mhamburguesa{
+    margin-top: 30px ;
+    
+  }
+  
+}
+
+/* pequeño */
+  @media(width<=667px){
+    .form-unidad{
+      width: 60px;
+    }
+    
+  }
+
+/* mediano */
+  @media(668px<=width<=991px){
+    .form-unidad{
+      width: 70px;
+    }
+    
+  }
+
+/* large */
+@media (width >= 992px) {
+    .form-unidad{
+      width: 70px;
+    }
+  }
+  .text-azul {
+    color: var(--azul-oscuro-1);
+  }
+  
+  .btn-azul {
+    background-color: var(--azul-oscuro-1);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-azul:hover {
+    background-color: #02122a;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: var(--azul-oscuro-1);
+    box-shadow: 0 0 0 0.2rem rgba(5, 24, 60, 0.25);
+  }
+  
+  img.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+
+
+ 
