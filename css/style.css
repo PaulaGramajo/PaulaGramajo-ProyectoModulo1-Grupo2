@@ -268,6 +268,55 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 
 }
 
+.espacio-talla{
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hover-effect {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Opcional: cambia el cursor al pasar por encima */
+}
+
+.seleccion-efecto {
+    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.seleccion-efecto:active {
+    transform: scale(0.95); 
+    opacity: 0.8;
+}
+
+.muestra-color {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.color-blanco {
+  background-color: white;
+}
+
+.color-rojo {
+  background-color: red;
+}
+
+.color-azul {
+  background-color: blue;
+}
+
+.color-verde {
+  background-color: green;
+}
+
 
 @media (width < 576px) {
   .centrarTexto {
@@ -346,4 +395,14 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   
 
 
+<<<<<<< HEAD
+@media (max-width: 768px) {
+  img {
+    display: none; 
+  }
+}
+
+  
+=======
  
+>>>>>>> 6e1c3dd9fbc196ebb4cd04e67cc2075cc5d4664b
