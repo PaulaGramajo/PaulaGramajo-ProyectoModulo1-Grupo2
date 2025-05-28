@@ -1,32 +1,32 @@
-# 🧢 Netgen - Ropa deportiva con estilo propio
+# 🧢 Nextgen - Ropa deportiva con estilo propio
 
-**Netgen** es una tienda web de ropa deportiva pensada para ofrecer una experiencia de usuario moderna, ágil y visualmente atractiva.  
+**Nextgen** es una tienda web de ropa deportiva pensada para ofrecer una experiencia de usuario moderna, ágil y visualmente atractiva.  
 Inspirada en referentes del sector como **Nike**, **Adidas** y **Sporting**, creamos una plataforma que combina diseño, funcionalidad y simplicidad para acercarte a lo último en moda deportiva.
 
-🎽 ¡Viví la experiencia Netgen y llevá tu estilo al próximo nivel!
+🎽 ¡Viví la experiencia Nextgen y llevá tu estilo al próximo nivel!
 
 ---
 
 ## 🌐 Sitio en línea
 
 🚀 Podés ver nuestra tienda en vivo en el siguiente enlace:  
-🔗 **[Enlace a Netgen en Netlify](https://TU-LINK-NETLIFY-AQUI.netlify.app)** ← *¡Reemplazá este texto con tu URL cuando esté listo!*
+🔗 **[Enlace a Nextgen en Netlify](https://TU-LINK-NETLIFY-AQUI.netlify.app)** ← *¡Reemplazá este texto con tu URL cuando esté listo!*
 
 ---
 
-## 🌟 ¿Qué es Netgen?
+## 🌟 ¿Qué es Nextgen?
 
-Netgen es una tienda online que ofrece productos de indumentaria deportiva con un enfoque minimalista y moderno. Tomamos como inspiración la estética y funcionalidad de marcas líderes para diseñar una web clara, atractiva y fácil de usar.
+Nextgen es una tienda online que ofrece productos de indumentaria deportiva con un enfoque minimalista y moderno. Tomamos como inspiración la estética y funcionalidad de marcas líderes para diseñar una web clara, atractiva y fácil de usar.
 
 ---
 
 ## ✨ Características principales
 
-- 🧭 Navegación rápida y ordenada por categorías
-- 🛍️ Catálogo de productos con imágenes y descripciones
-- 📱 Diseño **responsive**, adaptable a cualquier dispositivo
-- 🎨 Estética limpia, con fuerte inspiración en **Nike**, **Adidas** y **Sporting**
-- 💬 Sección de contacto para atención al cliente
+- 🧭 Navegación rápida y ordenada por categorías  
+- 🛍️ Catálogo de productos con imágenes y descripciones  
+- 📱 Diseño **responsive**, adaptable a cualquier dispositivo  
+- 🎨 Estética limpia, con fuerte inspiración en **Nike**, **Adidas** y **Sporting**  
+- 💬 Sección de contacto para atención al cliente  
 
 ---
 
@@ -41,17 +41,16 @@ Durante el desarrollo del proyecto, analizamos el diseño, navegación y experie
 | Sporting  | [sporting.com.ar](https://www.sporting.com.ar) | Variedad de categorías, enfoque local, simpleza visual |
 
 > Estas páginas fueron fuente de inspiración visual y funcional.  
-> Netgen no representa ni está afiliado con ninguna de estas marcas.
+> Nextgen no representa ni está afiliado con ninguna de estas marcas.
 
 ---
 
 ## 💻 Tecnologías utilizadas
 
-- ⚙️ **HTML5**
-- 🎨 **CSS3** con Flexbox y Grid
-- 🧠 **JavaScript Vanilla**
-- 💎 **Bootstrap 5** (para componentes y diseño responsive)
-- 📲 Responsive Design
+- ⚙️ **HTML5**  
+- 🎨 **CSS3** con Flexbox y Grid  
+- 💎 **Bootstrap 5** (para componentes y diseño responsive)  
+- 📲 Responsive Design  
 - ☁️ **Deploy en Netlify**
 
 ---
@@ -60,12 +59,12 @@ Durante el desarrollo del proyecto, analizamos el diseño, navegación y experie
 
 Este proyecto fue desarrollado con fines educativos por:
 
-- 👨‍💻 Pablo Germán Jiménez  
 - 👨‍💻 Abellesen Ignacio David  
-- 👨‍💻 Héctor Eduardo Velazques  
 - 👨‍💻 Diaz Gonzalo  
-- 👩‍💻 Paula Gramajo  
-- 👨‍💻 Naim Federico Paz  
+- 👩‍💻 Gramajo Paula  
+- 👨‍💻 Jiménez Pablo Germán  
+- 👨‍💻 Paz Naim Federico  
+- 👨‍💻 Velazques Héctor Eduardo  
 
 > Proyecto académico inspirado en las plataformas de Nike, Adidas y Sporting, pero con desarrollo 100% original.  
 > Sin fines de lucro.
@@ -75,5 +74,5 @@ Este proyecto fue desarrollado con fines educativos por:
 ## 🚀 Cómo ejecutar el proyecto localmente
 
 ```bash
-git clone https://github.com/tunombre/Netgen.git
-cd Netgen
+git clone https://github.com/tunombre/nextgen.git
+cd nextgen
