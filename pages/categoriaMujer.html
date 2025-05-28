@@ -15,7 +15,190 @@
     <title>NextGen</title>
   </head>
   <body>
-    <header></header>
+    <header id="navBarSuperior">
+      <nav class="navbar navbar-expand p-1" id="inicioPag">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand" href="../index.html">
+            <img
+              class="logoIndexPrincipal brillo"
+              src="../img/logoNextGen.png"
+              alt="logo"
+            />
+          </a>
+
+          <ul class="navbar-nav flex-row gap-3 m-0">
+            <li class="nav-item">
+              <a class="nav-link d-none d-lg-inline" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-none d-lg-inline"
+                href="./acercaDeNosotros.html"
+                >Acerca de nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="container d-flex justify-content-end">
+        <div class="w-100 Mhamburguesa" id="navBarPrincipal">
+          <div class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+              <div
+                class="collapse navbar-collapse order-2 justify-content-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mb-2 mb-lg-0 espaciadoCat">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hombre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mujer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Niño</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Accesorios</a>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="#">Contactos</a>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="./acercaDeNosotros.html"
+                      >Acerca de nosotros</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-start ms-auto order-3 me-0 position-absolute z-10"
+        >
+          <form class="d-flex align-items-start mt-2 py-1" role="search">
+            <button
+              class="btn btn-outline-light p-0 px-1 py-0 mx-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#searchForm"
+              aria-expanded="false"
+              aria-controls="searchForm"
+            >
+              <i class="bi bi-search text-center"></i>
+            </button>
+            <div class="collapse" id="searchForm">
+              <input
+                class="form-control ms-2 mx-0"
+                type="search"
+                placeholder="¿Que buscas?"
+                aria-label="Search"
+                id="searchInput"
+              />
+            </div>
+          </form>
+
+          <a
+            href="#"
+            class="link-light mx-2 mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <i class="bi bi-person-circle fs-4"></i>
+          </a>
+          <a href="./carrito.html" class="link-light mx-2 mt-2">
+            <i class="bi bi-cart-check-fill fs-4"></i>
+          </a>
+
+          <!-- Boton hamburguesa -->
+          <button
+            class="navbar-toggler ms-2 mt-2 order-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon mt-1 border rounded-1 fs-5"></span>
+          </button>
+        </div>
+
+        <!-- MODAL -->
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">
+                  Iniciar Sesión / Registrarse
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo Electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="rememberMe"
+                    />
+                    <label class="form-check-label" for="rememberMe"
+                      >Recordarme</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary">
+                    Iniciar Sesión
+                  </button>
+                </form>
+                <hr />
+                <div class="text-center">
+                  <p>
+                    ¿No tienes cuenta?
+                    <a href="./PaginaRegistro.html">Regístrate aquí</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
     <main class="bg-light">
       <div class="container py-1">
         <nav aria-label="breadcrumb">
