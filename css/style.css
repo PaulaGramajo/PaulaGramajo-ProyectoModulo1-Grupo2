@@ -108,10 +108,6 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 }
 
 
-/*Acerca de nosotros Sección*/
-.bgMain{
-  background-color: var(--azul-oscuro-1);
-}
 
 .img-nosotros{
   object-fit: cover;
@@ -273,16 +269,6 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   background-color: rgba(204, 204, 204, 0.411);
 }
 
-.btn-cat{
-  background-color: var(--azul-claro);
-  
-}
-
-.btn-cat:hover{
-  background-color: var(--azul-grafito);
-
-}
-
 .espacio-talla{
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -334,58 +320,9 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 
 
 
-@media (width < 576px) {
-  .centrarTexto {
-    text-align: center;
-  }
-}
 
-@media (max-width: 576px) {
-  .carousel-img {
-    max-width: 500px;
-    height: 200px;
-  }
-}
-@media (max-width: 576px) {
-  .carousel-video {
-    max-width: 500px;
-    height: 200px;
-  }
-}
 
-@media (width < 992px) {
-  .Mhamburguesa{
-    margin-top: 30px ;
-    
-  }
-  .Iconos-md{
-    font-size: 40px;
-  }
 
-}
-
-/* pequeño */
-  @media(width<=767px){
-    .form-unidad{
-      width: 60px;
-    }
-    
-  }
-
-/* mediano */
-  @media(768px<=width<=991px){
-    .form-unidad{
-      width: 70px;
-    }
-    
-  }
-
-/* large */
-@media (width >= 992px) {
-    .form-unidad{
-      width: 70px;
-    }
-  }
   .text-azul {
     color: var(--azul-oscuro-1);
   }
@@ -410,4 +347,48 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   img.object-fit-cover {
     object-fit: cover;
     width: 100%;
+  }
+
+@media (width < 992px) {
+  .Mhamburguesa{
+    margin-top: 30px ;
+    
+  }
+  .Iconos-md{
+    font-size: 40px;
+  }
+
+}
+
+/* pequeño */
+  @media(width<=767px){
+    .form-unidad{
+      width: 60px;
+    }
+    .centrarTexto {
+    text-align: center;
+  }
+  .carousel-img {
+    max-width: 500px;
+    height: 200px;
+  }
+  .carousel-video {
+    max-width: 500px;
+    height: 200px;
+  }
+  }
+
+/* mediano */
+  @media(768px<=width<=991px){
+    .form-unidad{
+      width: 70px;
+    }
+    
+  }
+
+/* large */
+@media (width >= 992px) {
+    .form-unidad{
+      width: 70px;
+    }
   }
