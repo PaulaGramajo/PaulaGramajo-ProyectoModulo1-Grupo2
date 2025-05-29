@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro | Sports</title>
+    <title>Registro | NextGen</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -23,12 +27,12 @@
               alt="logo"
             />
           </a>
-
           <ul class="navbar-nav flex-row gap-3 m-0">
             <li class="nav-item">
               <a class="nav-link d-none d-lg-inline" href="./contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
+
               <a
                 class="nav-link d-none d-lg-inline"
                 href="./acercaDeNosotros.html"
@@ -38,6 +42,7 @@
           </ul>
         </div>
       </nav>
+
 
       <nav class="container d-flex justify-content-end pb-1">
         <div class="w-100 Mhamburguesa" id="navBarPrincipal">
@@ -229,28 +234,92 @@
               <label for="password" class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="password" required />
             </div>
-            <div class="mb-4">
-              <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
-              <input type="password" class="form-control" id="confirmPassword" required />
-            </div>
-            <button type="submit" class="btn btn-azul w-100">Registrarse</button>
-          </form>
-          <div class="text-center mt-4">
-            <small>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></small>
           </div>
         </div>
 
-        <!--Imagen-->
-        <div class="col-md-6 d-none d-md-block p-0">
-          <img
-            src="https://i.pinimg.com/736x/2d/b2/e9/2db2e972e81d736cfd87b39e2301b520.jpg"
-            alt="Imagen deportiva"
-            class="img-fluid h-100 object-fit-cover"
-          />
+        
+        <div class="d-flex align-items-start ms-auto order-3 me-0 position-absolute z-10">
+          <form class="d-flex align-items-start mt-2 py-1" role="search">
+            <button
+              class="btn btn-outline-light p-0 px-1 py-0 mx-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#searchForm"
+              aria-expanded="false"
+              aria-controls="searchForm"
+            >
+              <i class="bi bi-search text-center"></i>
+            </button>
+            <div class="collapse" id="searchForm">
+              <input
+                class="form-control ms-2 mx-0"
+                type="search"
+                placeholder="¿Qué buscás?"
+                aria-label="Search"
+                id="searchInput"
+              />
+            </div>
+          </form>
+          <a href="#" class="link-light mx-2 mt-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="bi bi-person-circle fs-4"></i>
+          </a>
+          <a href="./carrito.html" class="link-light mx-2 mt-2">
+            <i class="bi bi-cart-check-fill fs-4"></i>
+          </a>
+          
+          <button
+            class="navbar-toggler ms-2 mt-2 order-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon mt-1 border rounded-1 fs-5"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    
+    <main class="bg-light">
+      <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="row shadow-lg rounded-4 overflow-hidden w-100" style="max-width: 1000px;">
+          <div class="col-md-6 p-5 bg-body-secondary">
+            <h2 class="fw-bold mb-4 text-azul">Crear una cuenta</h2>
+            <form id="registerForm" novalidate>
+              <div class="mb-3"><label for="name" class="form-label">Nombre completo</label><input type="text" class="form-control" id="name" required /></div>
+              <div class="mb-3"><label for="email" class="form-label">Correo electrónico</label><input type="email" class="form-control" id="email" required /></div>
+              <div class="mb-3"><label for="gender" class="form-label">Género</label>
+                <select class="form-select" id="gender" required>
+                  <option value="">Selecciona tu género</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                  <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                </select>
+              </div>
+              <div class="mb-3"><label for="birthday" class="form-label">Fecha de nacimiento</label><input type="date" class="form-control" id="birthday" required /></div>
+              <div class="mb-3"><label for="password" class="form-label">Contraseña</label><input type="password" class="form-control" id="password" required /></div>
+              <div class="mb-4"><label for="confirmPassword" class="form-label">Confirmar contraseña</label><input type="password" class="form-control" id="confirmPassword" required /></div>
+              <button type="submit" class="btn btn-azul w-100">Registrarse</button>
+            </form>
+            <div class="text-center mt-4">
+              <small>¿Ya tenés cuenta? <a href="#">Iniciá sesión</a></small>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block p-0">
+            <img
+              src="https://i.pinimg.com/736x/2d/b2/e9/2db2e972e81d736cfd87b39e2301b520.jpg"
+              alt="Imagen deportiva"
+              class="img-fluid h-100 object-fit-cover"
+            />
+          </div>
         </div>
       </div>
-    </div>
     </main>
+    
     <footer class="colorFooter pt-4 pb-1 centrarTexto">
       <div class="container">
         <div class="row">
@@ -331,6 +400,32 @@
           </div>
         </div>
       </div>
-    </footer>
+   </footer>
+           <!-- Bootstrap + Script de validación -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('registerForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const gender = document.getElementById('gender').value;
+        const birthday = document.getElementById('birthday').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (!name || !email || !gender || !birthday || !password || !confirmPassword) {
+          alert('Por favor, completa todos los campos.');
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          alert('Las contraseñas no coinciden.');
+          return;
+        }
+
+        alert('¡Registro exitoso!');
+        this.reset();
+      });
+    </script>
   </body>
 </html>
