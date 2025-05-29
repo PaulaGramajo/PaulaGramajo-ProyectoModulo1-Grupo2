@@ -317,6 +317,23 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   background-color: green;
 }
 
+body, html {
+  background-color: #f8f9fa;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main.error404 {
+  min-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center; 
+}
+
 
 
 
