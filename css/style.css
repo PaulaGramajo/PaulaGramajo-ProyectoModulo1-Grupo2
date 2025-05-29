@@ -10,6 +10,17 @@
   --gris-claro: #c9c9c9;
   --gris-clarito: #ffffff;
 }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
 .acercaDeNosotrosMain{
   background-color: black;
   border-radius: 10px;
@@ -101,12 +112,16 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 .bgMain{
   background-color: var(--azul-oscuro-1);
 }
-.foto {
-  width: 100%;
+
+.img-nosotros{
+  object-fit: cover;
   height: 100%;
-  filter: grayscale(60%);
+}
+.foto { 
   transition: 600ms;
-  position: relative; 
+  position: relative;
+  height: 100%; 
+
 }
 .foto:hover {
   filter: grayscale(0%);
@@ -319,7 +334,6 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
 
 
 
-
 @media (width < 576px) {
   .centrarTexto {
     text-align: center;
@@ -347,11 +361,11 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   .Iconos-md{
     font-size: 40px;
   }
-  
+
 }
 
 /* pequeño */
-  @media(width<=667px){
+  @media(width<=767px){
     .form-unidad{
       width: 60px;
     }
@@ -359,7 +373,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   }
 
 /* mediano */
-  @media(668px<=width<=991px){
+  @media(768px<=width<=991px){
     .form-unidad{
       width: 70px;
     }
@@ -397,12 +411,3 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
     object-fit: cover;
     width: 100%;
   }
-  footer,
-footer h5,
-footer a,
-footer p,
-footer li,
-footer span {
-  color: white !important;
-}
-

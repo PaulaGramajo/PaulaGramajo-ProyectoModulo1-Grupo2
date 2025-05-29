@@ -15,7 +15,192 @@
     <title>NextGen</title>
   </head>
   <body>
-    <header></header>
+      <header id="navBarSuperior">
+      <nav class="navbar navbar-expand p-1" id="inicioPag">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand" href="../index.html">
+            <img
+              class="logoIndexPrincipal brillo"
+              src="../img/logoNextGen.png"
+              alt="logo"
+            />
+          </a>
+
+          <ul class="navbar-nav flex-row gap-3 m-0">
+            <li class="nav-item">
+              <a class="nav-link d-none d-lg-inline" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-none d-lg-inline"
+                href="./acercaDeNosotros.html"
+                >Acerca de nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="container d-flex justify-content-end pb-1">
+        <div class="w-100 Mhamburguesa" id="navBarPrincipal">
+          <div class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+              <div
+                class="collapse navbar-collapse order-2 justify-content-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mb-2 mb-lg-0 espaciadoCat">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./categoriaHombre.html">Hombre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./categoriaMujer.html">Mujer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./error404.html">Niño</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./error404.html">Accesorios</a>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="./contacto.html">Contactos</a>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="./acercaDeNosotros.html"
+                      >Acerca de nosotros</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-start ms-auto order-3 me-0 position-absolute z-10 "
+        >
+          <form class="d-flex align-items-start mt-2 py-1" role="search">
+            <button
+              class="btn px-1 py-0 mx-2 border-0 "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#searchForm"
+              aria-expanded="false"
+              aria-controls="searchForm"
+            >
+              <i class="bi bi-search text-center fs-4 "></i>
+            </button>
+            <div class="collapse" id="searchForm">
+              <input
+                class="form-control mx-0 mt-1"
+                type="search"
+                placeholder="¿Que buscas?"
+                aria-label="Search"
+                id="searchInput"
+                required
+              />
+            </div>
+          </form>
+
+          <a
+            href="#"
+            class="link-light mx-2 mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <i class="bi bi-person-circle fs-3"></i>
+          </a>
+          <a href="./carrito.html" class="link-light mx-2 mt-2">
+            <i class="bi bi-cart-check-fill fs-3"></i>
+          </a>
+
+          <!-- Boton hamburguesa -->
+          <button
+            class="navbar-toggler ms-2 mt-2 order-1 d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon mt-1 border rounded-1 fs-5"></span>
+          </button>
+        </div>
+
+        <!-- MODAL -->
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">
+                  Iniciar Sesión / Registrarse
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo Electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="rememberMe"
+                    />
+                    <label class="form-check-label" for="rememberMe"
+                      >Recordarme</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary">
+                    Iniciar Sesión
+                  </button>
+                </form>
+                <hr />
+                <div class="text-center">
+                  <p>
+                    ¿No tienes cuenta?
+                    <a href="./PaginaRegistro.html">Regístrate aquí</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
     <main class="bg-light">
       <section class="container pt-5 pb-2">
         <h1 class="text-center text-dark pb-3">Mi carrito</h1>
@@ -27,9 +212,9 @@
                   class="col-3 d-flex align-items-center justify-content-center p-2"
                 >
                   <img
-                    src="../img/catHombre/remera2.jpg"
+                    src="../img/catHombre/zapatilla2.jpg"
                     class="img-fluid rounded-start"
-                    alt="Zapatillas de Trail Running Terrex Agravic 3"
+                    alt="Zapatillas Nike Air Force 1"
                   />
                 </div>
                 <div class="col-12">
@@ -39,9 +224,9 @@
                     >
                       <div class="w-100">
                         <h5 class="card-title mb-1">
-                          Remera Puma Posterize de Hombre
+                          Zapatillas Nike Air Force 1
                         </h5>
-                        <p class="card-text small">Talle: L</p>
+                        <p class="card-text small">Talle: 39</p>
                         <div class="d-flex align-items-center">
                           <select
                             class="form-select form-select me-2 bg-light text-dark form-unidad"
@@ -53,7 +238,7 @@
                         </div>
                       </div>
                       <div class="text-center">
-                        <p class="card-text fs-5 me-3">$49.999,00</p>
+                        <p class="card-text fs-5 me-3">$199.999,00</p>
                         <button
                           type="button"
                           class="btn btn-outline-secondary ms-2 colorBtn"
@@ -71,9 +256,9 @@
                   class="col-3 p-2"
                 >
                   <img
-                    src="../img/catHombre/botin2.jpg"
+                    src="../img/catMujer/buzo2.jpg"
                     class="img-fluid rounded-start"
-                    alt="Zapatillas de Trail Running Terrex Agravic 3"
+                    alt="Buzo Topper Rng II"
                   />
                 </div>
                 <div class="col-12">
@@ -83,9 +268,9 @@
                     >
                       <div class="w-100">
                         <h5 class="card-title mb-1">
-                          Botines Nike Phantom GX 2 Academy de Hombre
+                          Buzo Topper Rng II
                         </h5>
-                        <p class="card-text small">Talle: 39</p>
+                        <p class="card-text small">Talle: M</p>
                         <div class="d-flex align-items-center">
                           <select
                             class="form-select me-2 bg-light text-dark form-unidad"
@@ -97,7 +282,7 @@
                         </div>
                       </div>
                       <div class="text-center">
-                        <p class="card-text fs-5 me-3">$119.999,00</p>
+                        <p class="card-text fs-5 me-3">$55.999,00</p>
                         <button
                           type="button"
                           class="btn btn-outline-secondary ms-2 colorBtn"
@@ -118,7 +303,7 @@
                   <hr />
                   <div class="d-flex justify-content-between mb-2">
                     <span>2 productos</span>
-                    <span class="fw-bold">$ 169.998,00</span>
+                    <span class="fw-bold">$ 255.998,00</span>
                   </div>
                   <div class="d-flex justify-content-between mb-2">
                     <span>Entrega</span>
@@ -127,11 +312,8 @@
                   <hr />
                   <div class="d-flex justify-content-between fw-bold mb-2">
                     <span>Total</span>
-                    <span>$ 178.997,00</span>
+                    <span>$ 264.997,00</span>
                   </div>
-                  <p class="text-muted small text-secondary-emphasis">
-                    (IVA incluido $ 32.801,31)
-                  </p>
                   <hr />
                   <div class="d-grid mb-3">
                     <button
@@ -165,30 +347,31 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">
-            <a
-              href="../index.html"
-              class="link-light link-underline link-underline-opacity-0"
-            >
-              <h4 class="fs-3 text-style mb-4">NEXTGEN</h4>
-            </a>
-            <h4 class="fs-6">SUMATE A LA COMUNIDAD</h4>
+            <a href="../index.html">
+            <img
+              class="logoIndexPrincipal brillo"
+              src="../img/logoNextGen.png"
+              alt="logo"
+            />
+          </a>
+            <h4 class="fs-6 mt-2">SUMATE A LA COMUNIDAD</h4>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <h4>Nosotros</h4>
             <ul class="list-unstyled">
-              <a href="#" class="text-style">
+              <a href="./acercaDeNosotros.html" class="text-style">
                 <li>Acerca de nosotros</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./contacto.html" class="text-style">
                 <li>Contacto</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Medios de pago</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Trabaja con nosotros</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Sucursales</li>
               </a>
             </ul>
@@ -196,32 +379,32 @@
           <div class="col-12 col-md-6 col-lg-3">
             <h4>Ayuda</h4>
             <ul class="list-unstyled">
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Avisos legales</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Terminos y condiciones</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Politicas</li>
               </a>
-              <a href="#" class="text-style">
+              <a href="./error404.html" class="text-style">
                 <li>Sugerencias y reclamos</li>
               </a>
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-2">
             <h4>Seguinos</h4>
-            <a href="#" class="icons fs-4 me-2">
+            <a href="./error404.html" class="icons fs-4 me-2">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="#" class="icons fs-4 me-2">
+            <a href="./error404.html" class="icons fs-4 me-2">
               <i class="bi bi-facebook"></i>
             </a>
-            <a href="#" class="icons fs-4 me-2">
+            <a href="./error404.html" class="icons fs-4 me-2">
               <i class="bi bi-whatsapp"></i>
             </a>
-            <a href="#" class="icons fs-4 me-2">
+            <a href="./error404.html" class="icons fs-4 me-2">
               <i class="bi bi-twitter"></i>
             </a>
             <div class="my-3 fs-4">
