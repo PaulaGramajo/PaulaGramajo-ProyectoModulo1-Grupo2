@@ -10,6 +10,17 @@
   --gris-claro: #c9c9c9;
   --gris-clarito: #ffffff;
 }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
 .acercaDeNosotrosMain{
   background-color: black;
   border-radius: 10px;
@@ -351,11 +362,11 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   .Iconos-md{
     font-size: 40px;
   }
-  
+
 }
 
 /* pequeño */
-  @media(width<=667px){
+  @media(width<=767px){
     .form-unidad{
       width: 60px;
     }
@@ -363,7 +374,7 @@ filter: brightness(1.5); /* Aumenta el brillo al pasar el mouse */
   }
 
 /* mediano */
-  @media(668px<=width<=991px){
+  @media(768px<=width<=991px){
     .form-unidad{
       width: 70px;
     }
